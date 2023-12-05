@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0642cf51-ecba-45f4-95f1-ad280608dd8c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="querySearch" class="java.lang.String"/>
+	<parameter name="searchBy" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT p.id_peminjaman, p.nim, p.nama, p.prodi, p.angkatan, p.id_skripsi, s.judul, p.tanggal_peminjaman, p.tanggal_pengembalian 
+FROM peminjamanskripsi p
+INNER JOIN skripsi s ON s.id_skripsi = p.id_skripsi;]]>
+	</queryString>
+	<field name="id_peminjaman" class="java.lang.String"/>
+	<field name="nim" class="java.lang.String"/>
+	<field name="nama" class="java.lang.String"/>
+	<field name="prodi" class="java.lang.String"/>
+	<field name="angkatan" class="java.lang.String"/>
+	<field name="id_skripsi" class="java.lang.String"/>
+	<field name="judul" class="java.lang.String"/>
+	<field name="tanggal_peminjaman" class="java.sql.Date"/>
+	<field name="tanggal_pengembalian" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="156" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="152" forecolor="#FFFFFF" backcolor="#000066" uuid="82acf223-a370-4338-b396-72fb4382b943"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="152" y="0" width="330" height="142" forecolor="#FFFFFF" backcolor="#006633" uuid="c5b985f9-fe1d-48bf-99f3-b6d9099562da"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Segoe UI" size="32" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA PEMINJAMAN SKRIPSI SIBoox]]></text>
+			</staticText>
+			<image>
+				<reportElement x="21" y="14" width="131" height="123" uuid="b5bdee3c-963a-4c4d-9ad8-577c8ba81a01"/>
+				<imageExpression><![CDATA["C:\\Users\\HP\\Downloads\\0 Logo Buku.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="69" splitType="Stretch">
+			<textField>
+				<reportElement x="3" y="29" width="551" height="35" uuid="841b33c3-c89e-4aba-99c8-ef47c97b783b"/>
+				<textElement>
+					<font fontName="Segoe UI" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Hasil pencarian dari " + $P{querySearch} + " berdasarkan pada kolom " + $P{searchBy} +" hasilnya seperti dibawah ini"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="3" width="555" height="59" forecolor="#000066" backcolor="#000066" uuid="4a0242fe-60f3-44cb-80e4-74d088e71c20"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="4" y="3" width="56" height="59" forecolor="#FFFFFF" uuid="3c3641de-a48e-4c4c-9215-88a39aa6b69e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<text><![CDATA[Id Peminjaman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="483" y="3" width="70" height="59" forecolor="#FFFFFF" uuid="c475c6ae-2f31-4ccd-a60b-f81cb00fa332"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<text><![CDATA[Tanggal Pengembalian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="3" width="51" height="59" forecolor="#FFFFFF" uuid="338348cc-53dd-4ec6-b5b1-c44e4cfd9aab"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<text><![CDATA[Id Skripsi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="352" y="3" width="58" height="59" forecolor="#FFFFFF" uuid="439911d3-d029-468d-8886-76f8b1ec64c9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<text><![CDATA[Judul Skripsi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="119" y="3" width="49" height="59" forecolor="#FFFFFF" uuid="0c42546b-edd5-43a7-a881-2f74edad956a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<text><![CDATA[Nama Peminjam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="3" width="46" height="59" forecolor="#FFFFFF" uuid="e3a53ce3-4cfa-470d-80df-19ea21647e05"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<text><![CDATA[Angkatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="419" y="3" width="55" height="59" forecolor="#FFFFFF" uuid="a9b9d5df-f69f-4b7d-8db3-17e7195262f2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<text><![CDATA[Tanggal Peminjaman]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="3" width="46" height="59" forecolor="#FFFFFF" uuid="cd2e0821-4192-45b6-87fc-7ae53a977db9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<text><![CDATA[Prodi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="3" width="42" height="59" forecolor="#FFFFFF" uuid="f9a3a180-76ec-4eb6-b55f-0c12e74ff618"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<text><![CDATA[NIM]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="4" y="7" width="56" height="102" uuid="116d32b1-43c9-4d18-a0c6-23b02b48af0d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_peminjaman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="419" y="7" width="55" height="102" uuid="1a2ff69b-d027-4be4-b376-362155fe81af">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal_peminjaman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="352" y="7" width="61" height="102" uuid="90d730fe-3a1c-4779-9b18-ddc44656a55a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{judul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="483" y="7" width="70" height="102" uuid="aaad7e8c-2e70-43f8-8d46-d7ca7e0016e8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal_pengembalian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="7" width="46" height="102" uuid="fd73dbb9-e502-4936-91b6-49079381824d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prodi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="7" width="42" height="102" uuid="3203da96-520a-435c-b95d-9de4c6cbaafe">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="7" width="46" height="102" uuid="941c9fa9-5361-4bb1-b73e-76d259a72842">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{angkatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="7" width="49" height="102" uuid="cffa9162-9342-41e5-bae8-2ac20b4e8bf5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="7" width="51" height="102" uuid="143e7dde-d593-4ca0-a8a5-dedfb1f969d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_skripsi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
