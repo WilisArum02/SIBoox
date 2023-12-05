@@ -1,0 +1,5 @@
+INSERT INTO public.login (nomerinduk, password, nama, level)
+VALUES
+    ('09010622012', '16042004', 'Safriya Murni Puspita', 'Mahasiswa'),
+    ('09010622014', '02102003', 'Wilis Arum Karunia', 'Admin'),
+    ('12345', '01012000', 'Widyawati Rohani', 'Admin');
