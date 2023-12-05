@@ -11,12 +11,12 @@ Aplikasi ini dapat menambahkan buku dan skripsi. Dapat melakukan peminjaman juga
 5. Dapat melakukan cetak laporan jumlah peminjaman buku, skripsi, dan kategori
 6. Fitur Logout
 
-##Tech
+## Tech
 Menggunakan Apache Netbeans IDE 15 dan PostgreSQL pgAdmin 4
 
 [![forthebadge made-with-ApacheNeatbeans](https://th.bing.com/th?id=OSAAS.67E3675844C1A9B6C86DF097C16A6D3B&w=80&h=80&c=1&o=6&pid=5.1)](https://netbeans.apache.org/) [![forthebadge made-with-PosgreSQL](https://th.bing.com/th?id=OSAAS.C27BAA7112B6F36A360DBBC4ACA18527&w=80&h=80&c=1&o=6&pid=5.1)]([https://netbeans.apache.org/](https://www.postgresql.org/)https://www.postgresql.org/)
 
-##Preview Menu dan Sub menu
+## Preview Menu dan Sub menu
 
 <img width="465" alt="Screenshot 2023-12-05 153811" src="https://github.com/WilisArum02/SIBoox/assets/148854173/1c945f5a-0f95-4535-9740-715781b84aec">
 
@@ -60,7 +60,7 @@ Menggunakan Apache Netbeans IDE 15 dan PostgreSQL pgAdmin 4
 <img width="960" alt="Screenshot 2023-12-05 204707" src="https://github.com/WilisArum02/SIBoox/assets/148854173/a5e7fc4f-6a42-47c9-9961-27bf1cec12c8">
 
 
-##Preview Cetak(Laporan)
+## Preview Cetak(Laporan)
 
 
 <img width="951" alt="Screenshot 2023-12-05 203111" src="https://github.com/WilisArum02/SIBoox/assets/148854173/27d5d1b4-b253-4d75-8858-07c8a2e76985">
