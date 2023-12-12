@@ -17,9 +17,11 @@ Menggunakan Apache Netbeans IDE 15 dan PostgreSQL pgAdmin 4
 [![forthebadge made-with-ApacheNeatbeans](https://th.bing.com/th?id=OSAAS.67E3675844C1A9B6C86DF097C16A6D3B&w=80&h=80&c=1&o=6&pid=5.1)](https://netbeans.apache.org/) [![forthebadge made-with-PosgreSQL](https://th.bing.com/th?id=OSAAS.C27BAA7112B6F36A360DBBC4ACA18527&w=80&h=80&c=1&o=6&pid=5.1)]([https://netbeans.apache.org/](https://www.postgresql.org/)https://www.postgresql.org/)
 
 ## Preview Menu dan Sub menu
+Login menggunakan NIM/NIP dan password yang sudah ada di database. Disini saya membuat Data login yang menginputkan adalah pemegang databasenya.
 
 <img width="465" alt="Screenshot 2023-12-05 153811" src="https://github.com/WilisArum02/SIBoox/assets/148854173/1c945f5a-0f95-4535-9740-715781b84aec">
 
+Menu dashboard menampilkan jumlah jumlah data yang tersimpan.
 
 <img width="960" alt="Screenshot 2023-12-05 201711" src="https://github.com/WilisArum02/SIBoox/assets/148854173/83e67681-cbff-4f8f-a4e1-48a4fcb33fee">
 
@@ -32,6 +34,7 @@ Menggunakan Apache Netbeans IDE 15 dan PostgreSQL pgAdmin 4
 
 <img width="960" alt="Screenshot 2023-12-05 202205" src="https://github.com/WilisArum02/SIBoox/assets/148854173/f2b6fd0a-04ee-43fb-85cb-32b6d54d09f5">
 
+Menampilkan peminjaman buku dimana pada combo box judul buku sudah otomatis dapat dipilih dari buku-buku yang sudah tersimpan, apabila buku masih dipinjam makan buku tidak dapat di pinjam karena stoknya hanya 1 buku
 
 <img width="960" alt="Screenshot 2023-12-05 202349" src="https://github.com/WilisArum02/SIBoox/assets/148854173/449d4945-42ce-4013-9f2a-1feb77606eb5">
 
