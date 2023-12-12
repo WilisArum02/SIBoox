@@ -16,6 +16,9 @@ Menggunakan Apache Netbeans IDE 15 dan PostgreSQL pgAdmin 4
 
 [![forthebadge made-with-ApacheNeatbeans](https://th.bing.com/th?id=OSAAS.67E3675844C1A9B6C86DF097C16A6D3B&w=80&h=80&c=1&o=6&pid=5.1)](https://netbeans.apache.org/) [![forthebadge made-with-PosgreSQL](https://th.bing.com/th?id=OSAAS.C27BAA7112B6F36A360DBBC4ACA18527&w=80&h=80&c=1&o=6&pid=5.1)]([https://netbeans.apache.org/](https://www.postgresql.org/)https://www.postgresql.org/)
 
+## DDL DML SIBoox
+Untuk [ddl dan dml](https://github.com/WilisArum02/SIBoox/blob/main/SIBoox.sql)nya sudah tersedia diatas dengan format sql
+
 ## Preview Menu dan Sub menu
 Login menggunakan NIM/NIP dan password yang sudah ada di database. Disini saya membuat Data login yang menginputkan adalah pemegang databasenya.
 
