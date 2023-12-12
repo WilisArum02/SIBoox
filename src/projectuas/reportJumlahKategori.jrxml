@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="048c08b4-bdf5-4db8-b9b7-02ceefb3877a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT k.nama, COUNT(p.id_peminjaman) AS jumlah_peminjaman
+FROM peminjaman p
+JOIN buku b ON p.isbn = b.isbn
+JOIN kategori k ON b.id_kategori = k.id_kategori
+GROUP BY k.nama
+ORDER BY jumlah_peminjaman DESC;]]>
+	</queryString>
+	<field name="nama" class="java.lang.String"/>
+	<field name="jumlah_peminjaman" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="151" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="-1" width="555" height="152" forecolor="#FFFFFF" backcolor="#000066" uuid="3a8bf0b3-871e-4567-b88a-3131e5ef40dd"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="152" y="0" width="380" height="138" forecolor="#FFFFFF" backcolor="#006633" uuid="9fb05d30-44fe-4adb-8372-d0535fd7e67a"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Segoe UI" size="32" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[LAPORAN JUMLAH PEMINJAMAN KATEGORI BUKU SIBoox]]></text>
+			</staticText>
+			<image>
+				<reportElement x="21" y="15" width="131" height="123" uuid="b34b6772-29ca-49f3-958c-9ae0732c3c07"/>
+				<imageExpression><![CDATA["C:\\Users\\HP\\Downloads\\0 Logo Buku.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="7" width="499" height="20" uuid="1141e9e1-ac83-4788-8c61-aa379c2acbaa"/>
+				<textElement>
+					<font fontName="Segoe UI" size="15"/>
+				</textElement>
+				<text><![CDATA[Berikut adalah data dari jumlah kategori buku yang dipinjam di SIBoox]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="63" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="59" forecolor="#000066" backcolor="#000066" uuid="d6c78dbc-4f77-42d0-b9aa-7520047219b8"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="22" y="0" width="118" height="59" forecolor="#FFFFFF" uuid="68e069d9-b47f-4134-a4f9-ba5f78910d04"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="15"/>
+				</textElement>
+				<text><![CDATA[Nama Kategori]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="0" width="141" height="59" forecolor="#FFFFFF" uuid="e91124e1-ae5d-4616-b1fe-33b84a334fb0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="15"/>
+				</textElement>
+				<text><![CDATA[Jumlah Peminjaman]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="64" splitType="Stretch">
+			<textField>
+				<reportElement x="174" y="12" width="141" height="45" uuid="9727be67-7fad-43be-8e59-f679fa73098b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jumlah_peminjaman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="22" y="11" width="143" height="45" uuid="3d36812b-c4bf-4875-a773-a2ff2ea259dd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dd426237-0004-441f-9852-2b42612e40fe"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Segoe UI" size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="13" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="16" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="17" splitType="Stretch"/>
+	</summary>
+</jasperReport>
