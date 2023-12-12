@@ -7,8 +7,8 @@ Aplikasi ini dapat menambahkan buku dan skripsi. Dapat melakukan peminjaman juga
 1. Fitur Login
 2. Dapat menambahkan buku, skripsi, dan kategori
 3. Dapat melakukan transaksi peminjaman
-4. Dapat melakukan cetak laporan data
-5. Dapat melakukan cetak laporan jumlah peminjaman buku, skripsi, dan kategori
+4. Dapat melakukan cetak laporan data buku dan skripsi
+5. Dapat melakukan cetak laporan jumlah peminjaman buku, skripsi, dan kategori yang paling sering dipinjam
 6. Fitur Logout
 
 ## Tech
