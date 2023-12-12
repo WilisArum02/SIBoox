@@ -4,10 +4,10 @@ Aplikasi ini adalah sebuah aplikasi perpustakaan sederhana yang Bernama SIBoox y
 Aplikasi ini dapat menambahkan buku dan skripsi. Dapat melakukan peminjaman juga. Dapat melakukan cetak laporan  data buku, data skripsi, data peminjaman skripsi dan buku, cetak laporan jumlah buku yang dipinjam berdasarkan judulnya, jumlah kategori yang dipinjam berdasarkan nama kategori.
 
 ## Fitur
-1. Fitur Login
-2. Dapat menambahkan buku, skripsi, dan kategori
-3. Dapat melakukan transaksi peminjaman
-4. Dapat melakukan cetak laporan data buku dan skripsi
+1. Fitur [Login](https://github.com/WilisArum02/SIBoox/blob/main/src/projectuas/FrmLogin.java)
+2. Dapat menambahkan, mengedit, menghapus [buku](https://github.com/WilisArum02/SIBoox/blob/main/src/projectuas/MenuBuku.java), [skripsi](https://github.com/WilisArum02/SIBoox/blob/main/src/projectuas/MenuSkripsi.java), dan [kategori](https://github.com/WilisArum02/SIBoox/blob/main/src/projectuas/MenuKategori.java)
+3. Dapat melakukan transaksi peminjaman [buku](https://github.com/WilisArum02/SIBoox/blob/main/src/projectuas/MenuPeminjamanBuku.java) dan [skripsi](https://github.com/WilisArum02/SIBoox/blob/main/src/projectuas/MenuPeminjamanSkripsi.java)
+4. Dapat melakukan cetak laporan data [buku](https://github.com/WilisArum02/SIBoox/blob/main/src/projectuas/ReportBuku.java) dan [skripsi](https://github.com/WilisArum02/SIBoox/blob/main/src/projectuas/ReportSkripsi.java)
 5. Dapat melakukan cetak laporan jumlah peminjaman buku, skripsi, dan kategori yang paling sering dipinjam
 6. Fitur Logout
 
